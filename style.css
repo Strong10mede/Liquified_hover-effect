@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pink:#fc427b;
+    --violet:#6c5ce7;
+    --gradient:linear-gradient(90deg,var(--violet),var(--pink));
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--gradient)
+}
+
+.container{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .imgBox{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.container .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125%;
+    object-fit: cover;
+    display: none;
+}
